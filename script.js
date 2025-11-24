@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
             media: 'assets/projects/recipe-manager.mp4',
             mediaType: 'video',
             thumbnail: 'assets/projects/thumbnails/recipe-manager.jpg',
-            tags: ['React', 'CSS Grid', 'HTML', 'JavaScript', 'Responsive'],
+            tags: ['React', 'CSS Grid', 'HTML', 'JavaScript', 'Responsive', 'MongoDB', ],
             category: 'Web App',
             github: 'https://github.com/skystar22033/recipe-manager',
             //live: 'https://mellow-brigadeiros-2f21c9.netlify.app/'
