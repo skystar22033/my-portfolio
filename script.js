@@ -523,7 +523,7 @@ contactForm.addEventListener('submit', function(e) {
     // CV Download functionality
     const downloadCVBtn = document.getElementById('downloadCV');
     downloadCVBtn.addEventListener('click', function() {
-        const cvPath = 'assets/Ayesha_C_V.pdf';
+        const cvPath = 'assets/Ayesha_Altaf CV.pdf';
         
         // Check if file exists
         fetch(cvPath)
@@ -532,7 +532,7 @@ contactForm.addEventListener('submit', function(e) {
                     // File exists - proceed with download
                     const a = document.createElement('a');
                     a.href = cvPath;
-                    a.download = 'Ayesha_CV.pdf';
+                    a.download = 'Ayesha_Altaf CV.pdf';
                     document.body.appendChild(a);
                     a.click();
                     document.body.removeChild(a);
