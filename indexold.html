@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayesha Altaf - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="container">
+            <div class="logo">AA</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <button id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="mobile-nav hidden">
+        <div class="container">
+            <div class="mobile-nav-header">
+                <div class="logo">AA</div>
+                <button id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#education" class="mobile-nav-link">Education</a>
+                <a href="#certificates" class="mobile-nav-link">Certificates</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="image-container">
+                        <div>
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span>Ayesha Altaf</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Full Stack Developer & AI Engineer
+                </p>
+                <p class="hero-description">
+                    Passionate about creating innovative web applications, mobile apps, and AI solutions. 
+                    Transforming ideas into reality with cutting-edge technologies.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">
+                        <i class="fas fa-rocket"></i>View My Work
+                    </button>
+                    <button class="btn-secondary" id="downloadCV">
+                        <i class="fas fa-download"></i>Download CV
+                    </button>
+                </div>
+                
+                <!-- Social Links in Hero -->
+               <div class="hero-social-links">
+    <a href="https://github.com/skystar22033" class="social-hero" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ayesha-altaf-b43100385/" class="social-hero" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://wa.me/923184210723" class="social-hero" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+</div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <div class="scroll-arrow">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Innovative Developer & Problem Solver</h3>
+                    <p>
+                        I'm a passionate full-stack developer and AI enthusiast with expertise in web development, 
+                        mobile applications, and machine learning. I love creating solutions that make a difference.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <div class="icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span>Mobile Apps</span>
+                        </div>
+                        <div class="highlight">
+                            <div class="icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span>AI/ML</span>
+                        </div>
+                        <div class="highlight">
+                            <div class="icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <span>Web Dev</span>
+                        </div>
+                        <div class="highlight">
+                            <div class="icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                    <div class="location-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Wah Cantt,Rawalpindi</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-categories">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <!-- Education items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <!-- Certificate items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together!</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you need a website, mobile app, or AI solution, let's discuss how we can work together.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ayeshaaltaf223@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>03184210723</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Wah Cantt, Rawalpindi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                    </div>
+                    <input type="text" placeholder="Subject" class="form-input">
+                    <textarea placeholder="Your Message" class="form-textarea" required></textarea>
+                    <button type="submit" class="btn-send">
+                        <i class="fas fa-paper-plane"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>AA</h3>
+                    <p>
+                        Full Stack Developer & AI Engineer creating innovative digital solutions with cutting-edge technologies.
+                    </p>
+                  <div class="social-links">
+    <a href="https://github.com/skystar22033" class="social-footer" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ayesha-altaf-b43100385/" class="social-footer" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://wa.me/923184210723" class="social-footer" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+   
+</div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>ayeshaaltaf223@gmail.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>03184210723</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Wah Cantt, Rawalpindi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ayesha Altaf. All rights reserved. | Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // REPLACE "YOUR_PUBLIC_KEY_HERE" with your actual Public Key from EmailJS
+        emailjs.init("KIULDOW8QsNYc4Gty");
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
